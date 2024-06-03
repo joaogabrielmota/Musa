@@ -1,0 +1,23 @@
+.container {
+  margin-top: 20px;
+}
+
+.criarPost .card-body {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+}
+
+#meusPosts, #todosPosts {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+.card .card-link {
+  color: #00ff00;
+}
+

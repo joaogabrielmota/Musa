@@ -1,0 +1,241 @@
+@media (min-width: 1500px) {
+    /*Configuração logo*/
+    .container.active #logo{
+        left: 88.25%;
+    }
+    
+    /*Configuração toggle*/
+    .toggle h1{
+        font-size: 82px;
+    }
+
+    .toggle p{
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    /*Configuração toggle-right*/
+    .toggle-right{
+        padding-bottom: 8%;
+    }
+
+    .background-right{
+        background-size: 980px;
+        background-position-x: 65%;
+        background-position-y: 25%;
+    }
+
+    .toggle-container #logar {
+        font-size: 45px;
+        width: 487px;
+        height: 86px;
+        margin-top: 29%;
+        margin-left: 4%;
+    }
+    
+    /*configuração forms*/
+    .social-icons{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .social{
+        font-size: 30px;
+        border:1px solid;
+        border-radius: 40px;
+        margin: 0 15px;
+        padding: 10px;
+    }
+
+    .form-container h1{
+        font-size:63px;
+    }
+
+    .container span{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    .container .form-floating{
+        font-size: 25px;
+        margin: 10px 0;
+        height: 54px;
+        width: 641px;
+    }
+
+    .container .form-select{
+        font-size: 25px;
+        margin: 10px 0;
+        height: 49px;
+        width: 641px;
+    }
+
+    .form-container .registrar{
+        font-size: 46px;
+        width: 451px;
+    }
+
+    /*Configuração toggle-left*/
+    .toggle-left{
+        padding-left: 7%;
+        padding-bottom: 17%;
+    }
+
+    .background-left{
+        background-size: 880px;
+        background-position-x: 65%;
+        background-position-y: 25%;
+    }
+
+    .toggle-container #registrar {
+        font-size: 45px;
+        width: 487px;
+        height: 96px;
+        margin-top: 100%;
+        margin-left: 4%;
+    }
+
+    /*Configuração forms*/
+    .container.active .logar{
+        margin-top: -1%;
+    }
+
+    .container.active .recuperarSenha{
+        font-size: 24px;
+        margin-top: 0;
+        margin-right: 35%;;
+    }
+
+    .container.active .login{
+        font-size: 46px;
+        width: 451px;
+        height: 90px;
+        margin-top: 14%;
+    }
+}
+
+@media (max-width: 1499px) {
+    /*Configuração toggle-right*/
+    #logo{
+        font-size: 42px;
+    }
+
+    .container.active #logo{
+        left: 83%;
+    }
+
+    .toggle h1{
+        font-size: 56px;
+    }
+
+    .toggle p{
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .toggle-right{
+        padding-bottom:15%;
+    }
+
+    .background-right{
+        background-size: auto;
+        background-position-x: 65%;
+        background-position-y: 20%;
+    }
+
+    .toggle-container #logar {
+        font-size: 32px;
+        width: 317px;
+        height: 72px;
+        margin-top: 45%;
+        margin-left: 4%;
+    }
+
+    /*configuração forms*/
+    .cadastrar{
+        margin-top: 3%;
+    }
+
+    .social-icons{
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .social{
+        font-size: 25px;
+        border:1px solid;
+        border-radius: 40px;
+        margin: 0 15px;
+        padding: 10px;
+    }
+
+    .form-container h1{
+        font-size:45px;
+    }
+
+    .container span{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .container .form-floating{
+        font-size: 23px;
+        margin: 10px 0;
+        height: 36px;
+        width: 451px;
+    }
+
+    .container .form-select{
+        font-size: 23px;
+        margin: 10px 0;
+        height: 56px;
+        width: 451px;
+    }
+
+    .form-container .registrar{
+        font-size: 36px;
+        margin-top: 1%;
+        margin-bottom:15%;
+        width: 351px;
+        height: 76px;
+    }
+
+    /*Configuração toggle-left*/
+    .toggle-left{
+        padding-left: 7%;
+        padding-bottom: 23%;
+    }
+
+    .background-left{
+        background-size: auto;
+        background-position-x: 55%;
+        background-position-y: 25%;
+    }
+
+    .toggle-container #registrar {
+        font-size: 35px;
+        width: 367px;
+        height: 76px;
+        margin-top: 125%;
+        margin-left: -1%;
+    }
+
+    /*Configuração forms login*/
+    .container.active .recuperarSenha{
+        position: absolute;
+        font-size: 24px;
+        margin-top: 30.75%;
+        margin-right: 30%;
+    }
+
+    .container.active .login{
+        font-size: 36px;
+        width: 351px;
+        height: 80px;
+        margin-top: 14%;
+    }
+
+    @media (min-width: 576px){
+
+    }
+}

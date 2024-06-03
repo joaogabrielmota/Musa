@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Dosis;
+    src: url(../fontes/Dosis/Dosis-VariableFont_wght.ttf);
+}
+/*Fonte Ethnocentric*/
+@font-face {
+    font-family: Ethnocentric;
+    src: url(../fontes/Ethnocentric/ethnocentric-rg.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: #000a0a;
+}

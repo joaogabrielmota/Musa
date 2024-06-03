@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Padrao.css">
+    <link rel="stylesheet" href="css/Cadastrar.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Musa</title>
+</head>
+<body>
+    <h1 id="logo">Musa</h1>
+    <div class="container">
+        <div class="form-container"><!--Container do Formulário-->
+            <form><!--Formulário-->
+                <!--Nome-->
+                <div class="row">
+                    <div class="col-10">
+                        <div class="formulario">
+                            <i class="ph ph-user-circle icones"></i>
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Nome de Usuário">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn" data-bs-toggle="collapse" id="collapse-nome" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="32" height="40" fill="rgb(0, 232, 0 )" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"></path></svg>
+                        </a>
+                        <div class="collapse" id="conteudo-nome">
+                            <div class="card card-body">
+                                Não pode ser alterado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Descrição-->
+                <div class="row">
+                    <div class="col-10">
+                        <div class="formulario">
+                            <textarea class="form-control descricao" placeholder="Descrição" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="formulario">
+                        <a class="btn" data-bs-toggle="collapse" id="collapse-descricao" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="32" height="40" fill="rgb(0, 232, 0 )" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"></path></svg>
+                        </a>
+                        <div class="collapse" id="conteudo-descricao">
+                            <div class="card card-body">
+                                Conte um pouco sobre você.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Links-->
+                <div class="row">
+                    <div class="col-10">
+                        <div class="formulario">
+                            <i class="ph ph-image icones"></i>
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Links">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn" data-bs-toggle="collapse" id="collapse-links" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="32" height="40" fill="rgb(0, 232, 0 )" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"></path></svg>
+                        </a>
+                        <div class="collapse" id="conteudo-links">
+                            <div class="card card-body">
+                                Coloque links relacionados ao seu trabalho ou outras redes sociais.
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-10">
+                        <div class="tags-formulario">
+                            <span>Suas tags</span>
+                            <div class="tags">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12">
+                                        <input type="checkbox" class="btn-check" id="cantor" autocomplete="off">
+                                        <label class="btn" for="cantor">Cantor</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <input type="checkbox" class="btn-check" id="produtor" autocomplete="off">
+                                        <label class="btn" for="produtor">Produtor</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12">
+                                        <input type="checkbox" class="btn-check" id="beatmaker" autocomplete="off">
+                                        <label class="btn beatmaker" for="beatmaker">BeatMaker</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mx-auto">
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="checkbox" class="btn-check" id="letrista" autocomplete="off">
+                                        <label class="btn" for="letrista">Letrista</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input type="checkbox" class="btn-check" id="instrumentista" autocomplete="off">
+                                        <label class="btn" for="instrumentista">Instrumentista</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn" data-bs-toggle="collapse" id="collapse-tags" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="32" height="40" fill="rgb(0, 232, 0 )" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"></path></svg>
+                        </a>
+                        <div class="collapse" id="conteudo-tags">
+                            <div class="card card-body">
+                                Um meio de te encontrarem mais facilmente, limite de 3 tags.
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+                <button href="#"type="button" class="btn btn-lg salvar">Salvar</button>
+            </form> 
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/Cadastrar.js"></script>
+</body>
+</html>

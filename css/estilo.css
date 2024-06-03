@@ -1,0 +1,475 @@
+/*Fonte Dosis*/
+@font-face {
+    font-family: Dosis;
+    src: url(../fontes/Dosis/Dosis-VariableFont_wght.ttf);
+}
+/*Fonte Ethnocentric*/
+@font-face {
+    font-family: Ethnocentric;
+    src: url(../fontes/Ethnocentric/ethnocentric-rg.woff);
+}
+
+
+/*cor do corpo da pagina modo escuro/padrao*/
+body{
+    background: #000a0a;
+    transition: .5s;
+    overflow-x: hidden;
+}
+
+
+/*começo da configuração da navbar modo escuro/padrao*/
+/*configuração navbar*/
+.navbar{
+    background: linear-gradient(#000a0a6b 25%, #000a0a34 );
+    color: transparent;
+}
+
+.navbar-brand{
+    width: 70px;
+    margin-right: 0;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.navbar-nav{
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #d9d9d9;
+    font-size: 1.2em;
+    padding: .5em 2em;
+    justify-content: center;
+    font-family: dosis;
+}
+
+/*icone de lupa na tela media/pequena*/
+.lupa{
+    color: #d9d9d9;
+    font-size: 25px;
+    border: none;
+}
+
+.dropdown-menu{
+    background: transparent;
+    border: none;
+}
+
+
+/*botao modo escuro/modo claro*/
+.trilho{
+    width: 45px;
+    height: 20px;
+    background-color: #d9d9d9;
+    border-radius: 150px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 20px;
+    height: 20px;
+    background-color: #000a0a;
+    border-radius: 50px;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #000a0a;
+}
+
+.trilho.dark .indicador{
+    left: 25px;
+    background-color: #d9d9d9;
+}
+
+/*icone lua e sol*/
+.colori{
+    color: #d9d9d9;
+    margin: 4px;
+}
+
+/*caixinha de pesquisa*/
+.form-control{
+    width: 250px;
+    height: 36px;
+    background: #111b1b;
+    border: none;
+    border-radius: 50px;
+}
+
+.form-control i{
+    flex: 1;
+    text-align: center;
+    color: #d9d9d9;
+    font-size: 23px;
+}
+
+.form-control input{
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d9d9d9;
+    align-items: center;
+}
+
+/*botao da caixinha de pesquisa*/
+.btn-nav{
+    background: #111b1b;
+    border: none;
+    position: absolute;
+}
+
+.btn-nav:hover i{
+    color: #000a0a;
+    border-radius: 49px;
+}
+
+/*configuração da logo*/
+#logo{
+    font-size: 2em;
+    font-family: Ethnocentric;
+    background: linear-gradient(to top, rgb(233, 0, 118) 37%, rgb(0, 232, 0) 63%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 200px;
+    align-self: center;
+    text-align: center;
+}
+
+/*botão login*/
+.btn-login{
+    color: #000a0a;
+    background: rgb(0, 232, 0);
+    font-family: dosis;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    height: 36px;
+    width: 100px;
+}
+
+.btn-login:hover{
+    background: rgb(0, 69, 0);
+    color: #d9d9d9;
+    border: none;
+}
+/*fim da configuraçao navbar*/
+
+
+/*começo da configuraçao do banner modo escuro/padrao*/
+/*banner*/
+.background-banner{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/bgEsc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-banner{
+    font-size: 51px;
+    font-family: dosis;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: 43px;
+    color: #000a0a;
+}
+
+.btn-banner{
+    background: #d9d9d9;
+    color: #000a0a;
+    margin-left: 60px;
+    margin-bottom: 125px;
+    border: 3px solid #000a0a;
+    font-family: dosis;
+    font-weight: 600;
+    font-size: 39px;
+    width: 273.94px;
+    height: 67.9px;
+}
+
+.btn-banner:hover{
+    background: #000a0a;
+    color: #d9d9d9;
+    border: 2px solid #d9d9d9;
+}
+/*fim da configuraçao do banner*/
+
+
+/*titulos main modo escuro*/
+h1{
+    font-family: Ethnocentric;
+    color: #d9d9d9;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+
+/*destaques teste*/
+.destaque1{
+    background: rgb(233, 0, 118);
+    background-image: url(../img/bolhas.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.post{
+    background: #d9d9d9;
+    width: 542px;
+    height: 272px;
+    border-radius: 64px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.destaque2{
+    background: rgb(0, 232, 0);
+    background-image: url(../img/bolhas\ 2.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.destaque3{
+    background: rgb(0, 232, 0);
+    background-image: url(../img/bolhas\ 3.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.destaque4{
+    background: rgb(233, 0, 118);
+    background-image: url(../img/bolhas\ 4.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+/*cor e tamanho do indicador do carrossel*/
+.carousel-indicators .button{
+    width: 115px;
+    height: 5px;
+    background-color: #d9d9d967;
+    border: none; 
+    transition: background-color 0.6s ease;
+}
+
+.carousel-indicators .active {
+    background-color: rgb(233, 0, 118);
+}
+
+/*seta do carrossel*/
+.setinha{
+    color: #d9d9d9;
+    font-size: 85px;
+    margin: 50px;
+}
+
+
+/*cores modo claro*/
+body.dark{
+    background-color: #d9d9d9;
+}
+
+body.dark h1{
+    color: #000a0a;
+}
+
+/*cor do icone de sol e lua*/
+body.dark .colori{
+    color: #000a0a;
+    margin: 4px;
+}
+
+/*cor do botao login*/
+body.dark .btn-login{
+    color: #d9d9d9;
+    background: rgb(0, 69, 0);
+    font-family: dosis;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+body.dark .btn-login:hover{
+    background: rgb(0, 232, 0);
+    color: #000a0a;
+    border: none;
+}
+
+/*cor da logo*/
+body.dark #logo{
+    font-size: 2em;
+    font-family: Ethnocentric;
+    background: linear-gradient(to top, rgb(105, 0, 50) 37%, rgb(0, 69, 0) 63%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 200px;
+    text-align: center;
+}
+
+/*cor dos itens da nav*/
+body.dark .navbar .navbar-nav .nav-link{
+    color: #000a0a;
+    font-size: 1.2em;
+    padding: .5em 2em;
+    font-family: dosis;
+}
+
+body.dark .navbar{
+    background: linear-gradient(#d9d9d9cc 25%, #d9d9d97e );
+    color: transparent;
+}
+
+body.dark .background-banner{
+    width: 100%;
+   height: auto;
+   background-image: url(../img/bgCla.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+body.dark .btn-banner{
+    background: #000a0a;
+    color: #d9d9d9;
+    margin-left: 60px;
+    margin-bottom: 125px;
+    border: 3px solid #d9d9d9;
+    font-family: dosis;
+    font-weight: 600;
+    font-size: 39px;
+    width: 273.94px;
+    height: 67.9px;
+}
+
+body.dark .btn-banner:hover{
+    background: #d9d9d9;
+    color: #000a0a;
+    border: 2px solid #000a0a;
+}
+
+body.dark .text-banner{
+    font-size: 51px;
+    font-family: dosis;
+    font-weight: 590;
+    margin-left: 60px;
+    margin-top: 43px;
+    color: #d9d9d9;
+}
+
+body.dark .lupa{
+    color: #000a0a;
+}
+
+/*cor dos destaques*/
+body.dark .destaque1{
+    background: rgb(105, 0, 50);
+    background-image: url(../img/bolhas.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+body.dark .destaque2{
+    background: rgb(0, 69, 0);
+    background-image: url(../img/bolhas\ 2.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+body.dark .destaque3{
+    background: rgb(0, 69, 0);
+    background-image: url(../img/bolhas\ 3.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+body.dark .destaque4{
+    background: rgb(105, 0, 50);
+    background-image: url(../img/bolhas\ 4.png);
+    width: 580px;
+    height: 291px;
+    border-radius: 74px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+body.dark .post{
+    background: #000a0a;
+    width: 542px;
+    height: 272px;
+    border-radius: 64px;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/*cor do carrossel*/
+body.dark .carousel-indicators .button{
+    width: 115px;
+    height: 5px;
+    background: #00000056;
+    border: none; 
+    transition: background-color 0.6s ease;
+}
+
+body.dark .carousel-indicators .active {
+    background-color: rgb(105, 0, 50);
+}
+
+body.dark .setinha{
+    color: #000a0a;
+    font-size: 85px;
+    margin: 50px;
+}
+

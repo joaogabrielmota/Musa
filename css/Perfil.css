@@ -1,0 +1,389 @@
+﻿body{
+    height: auto;
+}
+
+.navbar {
+    background: linear-gradient(#000a0a6b 25%, #000a0a34 );
+    color: transparent;
+}
+
+.navbar-brand {
+    width: 70px;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #d9d9d9;
+    font-size: 1.1em;
+    padding: .5em 2em;
+    font-family: dosis;
+}
+
+/*caixinha de pesquisa*/
+.form-control {
+    width: 250px;
+    background: #111B1B;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.form-control i {
+    flex: 1;
+    text-align: center;
+    color: #d9d9d9;
+    font-size: 18px;
+}
+
+.form-control input {
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d9d9d9;
+    background-color: transparent;
+}
+
+/*botao da caixinha de pesquisa*/
+.btn-nav {
+    padding-left: 20px;
+    background: transparent;
+    border: none;
+}
+
+.btn-nav:hover i {
+    background: #d9d9d9;
+    color: #000a0a;
+}
+
+/*configuração da logo*/
+#logo {
+    font-size: 2em;
+    font-family: Ethnocentric;
+    background: linear-gradient(to top, rgb(233, 0, 118) 37%, rgb(0, 232, 0) 63%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 200px;
+}
+
+/*botão login*/
+.navbar #perfil-foto{
+    width: 8%;
+    min-height: 5%;
+    margin-left: 5%;
+    border-radius: 50%;
+}
+
+.btn-login:hover {
+    background: rgb(0, 68, 0);
+    color: #d9d9d9;
+}
+
+.container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 90%;
+    min-width: 90%;
+    margin-bottom: 5%;
+    height: 100%;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*Seção do Perfil*/
+
+/*Container do *Perfil*/
+.container .perfil{
+    font-family: Dosis;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    color:rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 0.08);;
+}
+
+/*Foto do perfil*/
+.container #perfil-foto{
+    margin-left: 1.75%;
+    margin-top: 30%;
+    width: 70%;
+    min-height: 20%;
+    border-radius: 50%;
+}
+
+.perfil h1{
+    margin-bottom: 0;
+}
+
+#descricao{
+    font-size: 28px;
+    margin-top: 10%;
+    margin-bottom: 10%;    
+}
+
+.infos-pessoais{
+    font-size: 26px;;
+}
+
+
+.tags {
+    margin-top: 10%;
+}
+
+.tags .tag {
+    font-family: Dosis;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 45px;
+    text-shadow: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 232, 0, 0.22);
+    color: rgb(217, 217, 217);
+    display: inline-block;
+    margin-bottom: 10px; /* Espaço entre as tags */
+    white-space: nowrap; /* Impede quebra de linha dentro da tag */
+    padding-top: 5px; /* Ajusta a altura das tags */
+    padding-bottom: 5px; /* Ajusta a altura das tags */
+    min-width: 100px; /* Define uma largura mínima */
+}
+
+#links{
+    font-family: Dosis;
+    font-size: 28px;
+    color:rgb(217, 217, 217);
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*Seção do Posts e Curtidas*/
+/*Container dos Posts e Curtidas*/
+.container .postscurtidas{
+    width: 74%;
+    margin-left: 1%;
+    border-radius: 25px;
+    background-color:#071010;
+}
+
+.postscurtidas h1{
+    font-family: Ethnocentric;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+/*Posts*/
+.container .posts{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container .carousel-inner{
+    padding-bottom: 8%;
+}
+
+/*Posts do lado esquerdo*/
+.container .post-esquerdo{
+    margin-left: 10%;
+}
+
+/*Posts do lado direito*/
+.container .post-direito{
+    margin-left: 10%;
+}
+
+/*Card*/
+.container .card{
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 450%;
+    border: none;
+    border-radius: 25px;
+    color: rgb(217, 217, 217);
+    background-color: rgba(217, 217, 217, 0.08);
+}
+
+/*Corpo do card*/
+.container .card-body{
+    width: 90%;
+    height: 450px;
+    margin-top: 3%; 
+}
+
+.card-body h3{
+    font-family: Dosis;
+    font-size: 30px;
+
+}
+
+.card-body p{
+    font-family: Dosis;
+    font-size: 24px;
+}
+
+/*Icone editar*/
+.card-body .editar{
+    cursor: pointer;
+    text-decoration: none;
+    color:rgb(217, 217, 217);
+}
+
+.card-body i{
+    font-size: 30px;
+    margin-left: 40%;
+}
+
+.arquivos{
+    margin-top: 5%;
+}
+/*Indicador do carrousel*/
+.carousel-indicators button {
+    margin: 0 10px;
+    min-width: 125px;
+    min-height: 7px;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.27); /* cor dos indicadores inativos */
+  }
+  
+  .carousel-indicators button.active {
+    background-color: rgb(0, 232, 0); /* cor do indicador ativo */
+  }
+
+.container .curtidas{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*Troca cursor em cima do curtir*/
+.container .curtida{
+    cursor: pointer;
+    color:rgb(233, 0, 118);
+}
+
+.curtida.curtida-ativa {
+    color:rgb(217, 217, 217); /* Cor da curtida clicada */
+}
+
+/*Modal*/
+.modal {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    width: 50%;
+    height: 1000px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+/*Conteúdo do modal*/
+.modal-content {
+    font-family: Dosis;
+    background-color:#111b1b;
+}
+
+.modal input{
+    font-size: 26px;
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 3%;
+    border-radius: 5px;
+    background-color: rgba(217, 217, 217, 0.27);;
+}
+
+.modal textarea{
+    font-size: 26px;
+    width: 87%;
+    margin-left: 6%;
+    border-radius: 5px;
+    color:#d9d9d9;
+    background-color: rgba(217, 217, 217, 0.27);
+}
+
+.modal textarea::placeholder{
+    color:rgb(217, 217, 217);
+}   
+
+.container {
+    position: relative;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer span{
+}
+
+/*Botão de fechar o modal*/
+.close {
+    text-align: right;
+    font-size: 36px;
+}
+
+@media(max-width: 991px){
+    body{
+        height: auto;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+    .container .perfil{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container #perfil-foto{
+        margin-top: 10%;
+        max-width: 60%;
+        min-height: 30%;
+    }
+    
+    .container .postscurtidas{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .container .card{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+}
+
+@media(max-width: 1600px){
+
+    .card-body h3{
+        font-family: Dosis;
+        font-size: 25px;
+    
+    }
+    
+    .card-body p{
+        font-family: Dosis;
+        font-size: 19px;
+    }
+
+    .card-body i{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,471 @@
+﻿/*OBS: As configurações foram feitas em uma tela de 1920px*/
+
+/*Fonte Dosis*/
+@font-face {
+    font-family: Dosis;
+    src: url(../fontes/Dosis/Dosis-VariableFont_wght.ttf);
+}
+/*Fonte Ethnocentric*/
+@font-face {
+    font-family: Ethnocentric;
+    src: url(../fontes/Ethnocentric/ethnocentric-rg.woff);
+}
+/*Config padrão*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    height: 100vh;
+    background-color: #000a0a;
+}
+
+#logo{
+    font-size: 48px;
+    font-family: Ethnocentric;
+    position: absolute;
+    left: 1%;
+    top: 0;
+    background: linear-gradient(to top, rgb(233, 0, 118) 37%, rgb(0, 232, 0) 63%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+/*Config dos icones sociais*/
+.social{
+    color:rgb(0, 232, 0);
+    border:1px solid;
+    border-radius: 20px;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+.social-icons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Configurações do container*/
+.container{
+    font-family: Dosis;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+}
+
+.form-container h1{
+    font-weight: 500;
+    font-size: 63px;   
+    color: rgb(217, 217, 217); 
+}
+
+.container p{
+    font-size: 18px; 
+    letter-spacing: 0.3px;   
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 29px;
+    color: rgb(217, 217, 217);
+}
+
+.container a{
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color:rgb(217, 217, 217);
+    text-decoration: none;
+}
+/*Config do forms*/
+.container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    color: rgb(217, 217, 217);
+}
+
+.container .form-floating{
+    font-size: 20px;
+    padding-top: 3px;
+    margin: 18px 0;
+    height: 49px;
+    width: 70%;
+    outline: none;
+    color: rgb(0, 232, 0);
+}
+
+.form-floating input{
+    font-size: 20px;
+    color: rgb(0, 232, 0);
+}
+
+.form-floating input:focus + label, .form-floating input:not(:placeholder-shown) + label {
+    color:rgb(0, 232, 0);
+    opacity: 0;/* cor do texto do label quando o input está em foco ou preenchido */
+  }
+
+.container .form-select{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    height: 59px;
+    width: 70%;
+    outline: none;
+    color:rgb(0, 232, 0);
+}
+
+i .form-icons {
+    font-size: 3em;
+}
+
+.form-control{
+    border-color: rgb(0, 223, 0);
+    background-color: #000a0a;
+}
+
+.form-select{
+    border-color: rgb(0, 223, 0);
+    background-color: #000a0a; 
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out
+}
+
+.form-container button{
+    font-size: 36px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: rgb(0, 232, 0);;
+    padding: 10px 80px;
+}
+
+.container.active .recuperarSenha{
+    font-size: 24px;
+    margin-top: 0;
+    margin-right: 48%;;
+}
+
+.form-container .registrar{
+    font-size: 46px;
+    width: 451px;
+    margin-top: 10%;
+}
+
+.form-container .login{
+    font-size: 46px;
+    width: 20%;
+    height: 90px;
+    margin-top: 14%;
+}
+
+/*Config inicial do cadastro*/
+.cadastrar{
+    left: 0;
+    width: 60%;
+    margin-top: 1%;
+    z-index: 2;
+}
+/*Movimentação do conteúdo cadastro ao ativar o container*/
+.container.active .cadastrar{
+    transform: translateX(100%);
+    opacity: 0;
+}
+/*Config inicial do logar*/
+.logar{
+    left: 0;
+    width: 60%;
+    opacity: 0;
+    z-index: 1;
+}
+/*Movimentação do conteúdo logar ao ativar o container*/
+.container.active .logar{
+    transform: translateX(70%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+.container.active #logo{
+    left: 88.25%;
+}
+/*animação*/
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+/*Config do painel*/
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+}
+/*Movimentação do painel ao ativar o container*/
+.container.active .toggle-container{
+    transform: translateX(-150%);
+}
+
+.toggle{
+    background-color: rgb(233, 0, 118);
+    height: 100%;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6ss ease-in-out
+}
+
+.toggle p{
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 32px;
+    text-align: left;
+    color: #000a0a;
+}
+ 
+.toggle h1 {
+    font-weight: 650;
+    font-size: 63px;
+    color: #000a0a;    
+}
+
+/*Movimentação do painel o ativar o container*/
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    align-items: initial;
+    display: flex; 
+    justify-content:center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: justify;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+/*Config inicial do painel esquerdo*/
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+/*Movimentação do conteúdo do painel esquerdo o ativar o container*/
+.container.active .toggle-left{
+    transform: translateX(0%);
+    padding-left: 7%;
+    padding-bottom: 23%;
+    background-image: url(../imagens/elipses2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 880px;
+    background-position-x: 65%;
+    background-position-y: 25%;
+}
+
+/*Config inicial do painel direito*/
+.toggle-right {
+    right: 0;
+    padding-left: 7.30%;
+    padding-bottom: 5.50%;
+    transform: translateX(0);
+}
+
+.background-right{
+    background-image: url(../imagens/elipses1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/*Movimentação do conteúdo do painel direito o ativar o container*/
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+/*Config do botão registrar-se*/
+.toggle-container #registrar{
+    position: absolute;
+    font-size: 45px;
+    width: 70%;
+    height: 96px;
+    margin-bottom: -10%;
+    margin-left: 0%;
+    font-weight: 600;
+    color: rgb(217, 217, 217);
+    background-color: #000a0a;
+    border-radius: 4px;
+    border: none;
+}
+/*Config do botão Entrar*/
+.toggle-container #logar {
+    position: absolute;
+    font-size: 45px;
+    width: 60%;
+    height: 86px;
+    margin-bottom: 35%;
+    margin-left: 6%;
+    font-weight: 600;
+    color: rgb(217, 217, 217);
+    background-color: #000a0a;
+    border-radius: 4px;
+    border: none;
+}
+
+/*Responsividade menor que 1600px*/
+@media (max-width: 1600px) and (min-width: 1500) {
+
+    .container.active #logo{
+        left: 86%;
+    }
+    
+    /*Configuração toggle-left*/
+    .toggle-left p{
+        margin-bottom: 100px;
+    }
+
+    .toggle-container #registrar {
+        margin-top: 125%;
+        margin-left: -2%;
+    }
+
+    /*Configuração toggle-right*/
+    .toggle-right{
+        padding-bottom:15%;
+    }
+
+    .toggle-container #logar {
+        margin-top: 42%;
+        margin-left: 6%;
+    }
+}
+
+/*Responsividade menor que 1499*/
+@media (max-width: 1499px) and (min-width:993){
+    #logo{
+        font-size: 42px;
+    }
+
+    .container.active #logo{
+        left: 90.25%;
+    }
+
+    .container.active .recuperarSenha{
+        margin-top: 32%;
+        margin-right: 38%;
+    }
+
+
+}
+
+
+@media (max-width: 992px) and (min-width: 767px){
+    #logo{
+    font-size: 42px;
+    }
+
+    .container.active #logo{
+        left: 80.75%;
+    }
+
+    /*Configuração container*/
+    .form-container h1{
+        font-size: 48px;
+    }
+
+    .form-container span{
+        font-size: 26px;
+    }
+
+    /*Configuração container cadastrar*/
+    .cadastrar{
+    margin-top: 5%;
+    }
+
+    .form-container .registrar{
+        font-size: 30px;
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    /*configuração container logar*/
+    .container.active .logar{
+        margin-top: -5%;
+    }
+
+    .container.active .recuperarSenha{
+        font-size: 22px;
+        margin-top: 44%;
+        margin-right: 26%;
+    }
+
+    .form-container .login{
+        margin-top:auto;
+    }
+
+    /*Configuração toggle*/
+    .toggle h1{
+        font-size: 48px
+    }
+
+    .toggle p{
+        font-size: 26px;
+    }
+
+    /*Configuração toggle-right*/
+    .toggle-container #logar {
+        font-size: 30px;
+        height: 70px;
+        margin-top: 46%;
+        margin-left: 5%;
+    }
+
+    /*Configuração toggle-left*/
+    .toggle-left p{
+        padding-bottom: 20%;
+    }
+
+    .toggle-container #registrar {
+        font-size: 30px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .toggle-container{
+        
+    }
+}
